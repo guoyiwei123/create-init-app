@@ -3,7 +3,7 @@
 ### 使用说明
 -   安装
 ```
-npm i ninggure-init-app
+npm i -g ninggure-init-app
 ```
 -   命令
 ```
