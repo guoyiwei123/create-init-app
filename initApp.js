@@ -2,12 +2,11 @@ const {resolve} = require("path");
 const {readFileSync, mkdirSync, existsSync} = require("fs");
 const cmd = require("./libs/cmd");
 const logColor = require("./libs/logColor");
-const unLinkDir = require("./libs/unLinkDir");
 module.exports = (options) => {
     // 项目类型: vue | react
     const type = options.type;
     // 项目根目录路径
-    const targetPath = resolve(process.env.PWD, options.name);
+    const targetPath = resolve(process.cwd(), options.name);
     // 类型列表
     const typeList = JSON.parse(readFileSync(resolve(__dirname, "./typelist.json")));
     // 创建项目文件夹
