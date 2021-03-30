@@ -6,10 +6,20 @@
 npm i -g @ninggure/create-init-app
 ```
 -   命令
+快速创建项目
 ```
-create-init-app -n project1 -t react
+$ create-init-app -n project1 -t react
 # or
-npx create-init-app -n project1 -t react
+$ npx create-init-app -n project1 -t react
+```
+
+也可以通过命令行交互创建
+```
+$ create-init-app
+? Please input project name: project111
+? Please select project type (Use arrow keys)
+❯ Vue 
+  React 
 ```
 
 -   参数说明
