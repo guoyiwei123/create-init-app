@@ -3,13 +3,13 @@
 ### 使用说明
 -   安装
 ```
-npm i -g ninggure-init-app
+npm i -g @ninggure/create-init-app
 ```
 -   命令
 ```
-ninggure-init-app -n project1 -t react
+create-init-app -n project1 -t react
 # or
-npx ninggure-init-app -n project1 -t react
+npx create-init-app -n project1 -t react
 ```
 
 -   参数说明

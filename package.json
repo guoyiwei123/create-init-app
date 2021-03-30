@@ -1,38 +1,39 @@
 {
-	"name": "ninggure-init-app",
-	"version": "1.1.8",
-	"description": "快速搭建项目工具",
-	"bin": {
-		"ninggure-init-app": "./bin/index.js"
-	},
-	"files": [
-		"bin/index.js",
-		"libs/cmd.js",
-		"libs/logColor.js",
-		"libs/unLinkDir.js",
-		"initApp.js",
-		"typelist.json"
-	],
-	"main": "./bin/index.js",
-	"engines": {
-		"node": ">=12"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [
-		"react",
-		"vue",
-		"webpack"
-	],
-	"author": "凝固热",
-	"license": "ISC",
-	"dependencies": {
-		"chalk": "^4.1.0",
-		"commander": "^7.2.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://gitee.com/ninggure/ninggure-init-app"
-	}
+  "name": "@ninggure/create-init-app",
+  "version": "1.0.1",
+  "description": "快速搭建项目工具",
+  "bin": {
+    "create-init-app": "bin/index.js"
+  },
+  "files": [
+    "bin/index.js",
+    "libs/cmd.js",
+    "libs/logColor.js",
+    "libs/unLinkDir.js",
+    "initApp.js",
+    "typelist.json"
+  ],
+  "main": "./bin/index.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "vue",
+    "webpack"
+  ],
+  "author": "凝固热",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/ninggure/create-init-app"
+  },
+  "devDependencies": {}
 }
