@@ -5,8 +5,8 @@ module.exports = (cmdStr, options) => {
     console.log(`${cmdStr} ${options.join(" ")}`);
     return new Promise((resolve, reject) => {
         const ls = spawn(cmdStr, options);
-        ls.stdout.on("data", data => logColor(0, data.toString()));
-        ls.stderr.on("data", data => logColor(0, data.toString()));
+        ls.stdout.on("data", data => logColor(0, data.toString(), ""));
+        ls.stderr.on("data", data => logColor(0, data.toString(), ""));
         ls.on("close", code => {
             code?reject(): resolve("");
         })

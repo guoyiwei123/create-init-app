@@ -1,4 +1,16 @@
-module.exports = (type, text) => {
-    type?console.log("\033[41;30m Error " + "\033[40;31m" + " " + text + " "+ "\033[0m")
-        :console.log("\033[42;30m Done " + "\033[40;32m" + " " + text + " " + "\033[0m")
+const chalk = require("chalk");
+module.exports = (type, text, typeText) => {
+    let resLog = "";
+    if(type){
+        if(typeText != ""){
+            resLog += chalk.rgb(0,0,0).bgRgb(255, 0, 51).bold(` ${typeText || "ERROR"} `);
+        }
+        resLog += chalk.rgb(255, 0, 51).bgRgb(0, 0, 0)(` ${text} `);
+    }else{
+        if(typeText != ""){
+            resLog += chalk.rgb(0,0,0).bgRgb(51, 255, 153).bold(` ${typeText || "SUCCESS"} `);
+        }
+        resLog += chalk.rgb(51, 255, 153).bgRgb(0, 0, 0)(` ${text} `);
+    }
+    console.log(resLog);
 }

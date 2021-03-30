@@ -1,6 +1,6 @@
 {
 	"name": "ninggure-init-app",
-	"version": "1.1.7",
+	"version": "1.1.8",
 	"description": "快速搭建项目工具",
 	"bin": {
 		"ninggure-init-app": "./bin/index.js"
@@ -28,6 +28,7 @@
 	"author": "凝固热",
 	"license": "ISC",
 	"dependencies": {
+		"chalk": "^4.1.0",
 		"commander": "^7.2.0"
 	},
 	"repository": {

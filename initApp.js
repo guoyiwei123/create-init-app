@@ -13,8 +13,6 @@ module.exports = (options) => {
     existsSync(targetPath) || mkdirSync(targetPath);
     // 拉取远程仓库
     cmd("git", ["clone", typeList[type], targetPath])
-        .then(res => {
-            logColor(0, "create project success!!!");
-        })
+        .then(res => logColor(0, "create project success!!"))
         .catch(err => logColor(1, "create project error"));
 }
